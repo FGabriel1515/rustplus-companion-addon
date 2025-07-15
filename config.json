@@ -1,0 +1,17 @@
+{
+  "name": "Rust+ Listener",
+  "version": "1.0",
+  "slug": "rustplus_listener",
+  "description": "Add-on para escutar eventos do Rust+ e acionar automações no Home Assistant.",
+  "startup": "application",
+  "arch": ["amd64", "armv7", "armhf", "aarch64"],
+  "boot": "auto",
+  "options": {},
+  "schema": {},
+  "ports": {
+    "8080/tcp": 8080
+  },
+  "webui": "http://[HOST]:[PORT:8080]",
+  "map": ["config:rw"],
+  "host_network": true
+}

@@ -1,10 +1,9 @@
 FROM python:3.10-slim
 
-# Copia o código para dentro do container
-COPY run.py /run.py
+WORKDIR /app
 
-# Instala dependências necessárias (exemplo)
+COPY run.py /app/
+
 RUN pip install rustplus
 
-# Comando para iniciar o script
-CMD ["python", "/run.py"]
+CMD ["python", "run.py"]
